@@ -21,6 +21,34 @@
             padding: 0;
             box-sizing: border-box;
         }
+.nav-menu .btn,
+.nav-menu .btn-outline {
+  padding: 8px 18px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  margin-left: 10px;
+}
+
+.nav-menu .btn {
+  background-color: var(--golden-yellow);
+  color: white;
+  border: none;
+}
+
+.nav-menu .btn:hover {
+  background-color: var(--dark-brown);
+}
+
+.nav-menu .btn-outline {
+  border: 2px solid var(--golden-yellow);
+  background: transparent;
+  color: var(--golden-yellow);
+}
+
+.nav-menu .btn-outline:hover {
+  background: var(--golden-yellow);
+  color: white;
+}
 
         body {
             font-family: 'Inter', sans-serif;
@@ -89,6 +117,25 @@ a .feature-card {
 }
 
         /* Header */
+        <header>
+  <div class="container header-container">
+    <div class="logo">
+      <div class="logo-text">Neuro<span>Verse</span></div>
+    </div>
+    <div class="mobile-menu-btn">
+      <i class="fas fa-bars"></i>
+    </div>
+    <ul class="nav-menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="student.html">Student</a></li>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <!-- New Login & Sign Up -->
+      <li><a href="login.html" class="btn-outline">Login</a></li>
+      <li><a href="signup.html" class="btn">Sign Up</a></li>
+    </ul>
+  </div>
+</header>
         header {
             background-color: white;
             box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
