@@ -76,6 +76,18 @@
             color: white;
         }
 
+        a {
+  text-decoration: none;
+  color: inherit;
+}
+
+        .feature-card a,
+a .feature-card {
+  text-decoration: none;
+  color: inherit;
+  display: block; /* makes the whole card clickable */
+}
+
         /* Header */
         header {
             background-color: white;
@@ -518,15 +530,15 @@
                 <h2>How NeuroVerse Helps</h2>
             </div>
             <div class="features-grid">
-                <a href = "student.html">
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-graduation-cap"></i>
-                    </div>
-                    <h3>For Students</h3>
-                    <p>Personalized learning paths, AI tutors, and immersive educational experiences tailored to your learning style.</p>
-                </div>
-                </a>
+               <a href="student.html" class="feature-link">
+  <div class="feature-card">
+    <div class="feature-icon">
+      <i class="fas fa-graduation-cap"></i>
+    </div>
+    <h3>For Students</h3>
+    <p>Personalized learning paths, AI tutors, and immersive educational experiences tailored to your learning style.</p>
+  </div>
+</a>
                 <div class="feature-card">
                     <div class="feature-icon">
                         <i class="fas fa-users"></i>
